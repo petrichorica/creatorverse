@@ -1,10 +1,10 @@
-# WEB103 Prework - *👉🏿 Name of App Here*
+# WEB103 Prework - *👉🏿 creatorverse*
 
-Submitted by: **👉🏿 your name here**
+Submitted by: **👉🏿 Jiarui Liang**
 
-About this web app: **👉🏿 app description here**
+About this web app: **👉🏿 A person's top content creators**
 
-Time spent: **👉🏿 X** hours
+Time spent: **👉🏿 16** hours
 
 ## Required Features
 
