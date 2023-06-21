@@ -8,6 +8,7 @@ import ShowCreators from "./pages/ShowCreators";
 import ViewCreator from "./pages/ViewCreator";
 import AddCreator from "./pages/AddCreator";
 import EditCreator from "./pages/EditCreator";
+import '@picocss/pico'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     element: <ShowCreators />,
   }, 
   {
-    path: "/view",
+    path: "/view/:creatorId",
     element: <ViewCreator />,
   },
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
     element: <AddCreator />,
   },
   {
-    path: "/edit",
+    path: "/edit/:creatorId",
     element: <EditCreator />,
   }
 ]);
@@ -32,5 +33,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <footer></footer>
   </React.StrictMode>,
 )

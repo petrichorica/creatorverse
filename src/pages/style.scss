@@ -1,0 +1,90 @@
+header {
+    padding: 150px 0 50px;
+
+    background-image: url("../assets/grunge-paint-background.jpg");
+    background-size: cover;
+    
+    h1 {
+        color: white;
+        text-shadow: 0 0 5px rgb(169, 169, 169);
+    }
+}
+
+.show-creators {
+    width: 100%;
+
+    .creator-container {
+        display: flex;
+        max-width: 1320px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        // display: grid;
+        // grid-template-columns: repeat(3, 33.3%);
+        // grid-gap: 10px 20px;
+        // grid-auto-rows: 50px;
+    }
+}
+
+.creator-content {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    .image {
+        width: 500px;
+        margin: 0 20px;
+    }
+    .info {
+        width: 700px;
+        margin: 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .social-media {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            h4 {
+                margin-bottom: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                word-break: break-all;
+                white-space: nowrap;
+            }
+        }
+
+        .icon {
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.add-creator, .edit-creator {
+    article {
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+
+        label {
+            text-align: left;
+        }
+
+    }
+    @media (prefers-color-scheme: light) {
+        button {
+            background-color: #1298c9;
+        }
+
+        .delete-button {
+            background-color: #db6946;
+        }
+    }
+}
+
+footer {
+    height: 50px;
+}
