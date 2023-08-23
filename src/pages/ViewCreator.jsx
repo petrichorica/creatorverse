@@ -42,24 +42,23 @@ function ViewCreator() {
                     {/* <img className="image" src={creator.image_url} alt="" /> */}
                     <div className="info">
                         <h3>{creator.name}</h3>
-                        { creator.instagram_url?.length > 0 && ( 
-                            <a className="social-media" href={creator.instagram_url}>
-                                <img className="icon" src={instagramSvg} alt="" />
-                                <h4>{creator.instagram_url}</h4>
-                            </a> 
-                        )}
-                        { creator.youtube_url?.length > 0 && (
-                            <a className="social-media" href={creator.youtube_url}>
-                                <img className="icon" src={youtubeSvg} alt="" />
-                                <h4>{creator.youtube_url}</h4>
-                            </a>
-                        )}
-                        { creator.twitter_url?.length > 0 && (
-                            <a className="social-media" href={creator.twitter_url}>
-                                <img className="icon" src={twitterSvg} alt="" />
-                                <h4>{creator.twitter_url}</h4>
-                            </a>
-                        )}
+                        <div className="social-link">
+                            { creator.instagram_url?.length > 0 && ( 
+                                <a className="social-media" href={creator.instagram_url}>
+                                    <img className="icon" src={instagramSvg} alt="" />
+                                </a> 
+                            )}
+                            { creator.youtube_url?.length > 0 && (
+                                <a className="social-media" href={creator.youtube_url}>
+                                    <img className="icon" src={youtubeSvg} alt="" />
+                                </a>
+                            )}
+                            { creator.twitter_url?.length > 0 && (
+                                <a className="social-media" href={creator.twitter_url}>
+                                    <img className="icon" src={twitterSvg} alt="" />
+                                </a>
+                            )}
+                        </div>
                         <p style={{textAlign: "left", marginTop: "20px"}}>{creator.description}</p>
                     </div>
                 </div>
