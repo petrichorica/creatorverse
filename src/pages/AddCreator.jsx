@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import { supabase } from "../client";
+import AutoScrollToTop from "../components/AutoScrollToTop";
 
 /* 
 {
@@ -39,6 +40,7 @@ function AddCreator() {
     }
     return (
         <div className="add-creator">
+            <AutoScrollToTop>
             <header>
                 <h1>Add New Creator</h1>
             </header>
@@ -71,6 +73,7 @@ function AddCreator() {
                     <button type="submit">Submit</button>
                 </form>
             </article>
+            </AutoScrollToTop>
         </div>
     )
 }
